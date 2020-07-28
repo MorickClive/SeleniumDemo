@@ -49,7 +49,7 @@ public class DemoSite {
         // ========================================
             LOGGER.info("Creating a new user...\n");
 
-            // Navigate to add a user page
+            // I need to navigate to add a user page
             targElement = driver.findElement(By.xpath("/html/body/div/center/table/tbody/tr[2]/td/div/center/table/tbody/tr/td[2]/p/small/a[3]"));
             targElement.click();
 
@@ -69,7 +69,7 @@ public class DemoSite {
         // ========================================
             LOGGER.info("Logging in as created user...\n");
 
-            // Navigate to add a user page
+            // I need to navigate to add a user page
             driver.findElement(By.xpath("/html/body/div/center/table/tbody/tr[2]/td/div/center/table/tbody/tr/td[2]/p/small/a[4]")).click();
 
             // Enter Credentials
@@ -95,7 +95,7 @@ public class DemoSite {
 
     @AfterClass
     public static void tearDown() {
-        LOGGER.info("Closing webdriver instance!");
+        LOGGER.warning("Closing webdriver instance!");
 
         driver.close();
 
